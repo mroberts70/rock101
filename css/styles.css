@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    background-color: black;
+    background-color: rgb(37, 37, 37);
 }
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -83,7 +83,7 @@ section {
 }
 article {
     display: none;
-    background-color: rgba(255, 235, 205, 0.428);
+    /* background-color: rgba(255, 235, 205, 0.428); */
     margin: 2vh;
     padding: 4vh 2vh 2vh;
 }
@@ -105,22 +105,32 @@ article {
     height: 100%;
 }
 .albumstocheckout {
-    margin-top: 3vh;
+    margin-top: 5vh;
     font-size: 200%;
     text-align: center;
 }
 .albumsummary {
-    margin-top: 2vh;
+    margin-top: 4vh;
 }
 .albumcover img {
     max-width: 600px;
     width: 100%;
+    margin: 2vh;
+    border: 3px ridge rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.artistname {
+    font-size: 200%;
+}
+.song {
+    font-size: 150%;
 }
 .albumstocheckout .albumsummary .notes {
     font-size: 50%;
     max-width: 600px;
     text-align: left;
     width: 100%;
+    margin: 0 auto;
 }
 .albumstocheckout .albumsummary .notes p {
     padding: 10px 0;
@@ -133,5 +143,4 @@ footer p {
     text-align: center;
     font-size: 85%;
     font-variant: small-caps;
-    font-weight: bold;
 }
