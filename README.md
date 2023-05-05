@@ -1,2 +1,2 @@
 # rock101
- Rock bands/artists introduced during class
+ Rock bands/artists introducted during class
