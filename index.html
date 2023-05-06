@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,20 +19,46 @@
             <h3>This page is a chronicle of all the bands/artists shared during the semester</h3>
         </div>
     </header>
-    <nav id="navlist">
+    <!-- <nav id="navlist">
         <ul>
-            <li><a href="#" onclick="showArtist(0)">Class 1: The Beatles</a></li>
-            <li><a href="#" onclick="showArtist(1)">Class 2: Jimi Hendrix</a></li>
-            <li><a href="#" onclick="showArtist(2)">Class 3: Led Zeppelin</a></li>
-            <li><a href="#" onclick="showArtist(3)">Class 4: Pink Floyd</a></li>
-            <li><a href="#" onclick="showArtist(4)">Class 5: Deep Purple</a></li>
-            <li><a href="#" onclick="showArtist(5)">Class 6: Heart</a></li>
-            <li><a href="#" onclick="showArtist(6)">Class 7: The Doors</a></li>
-            <li><a href="#" onclick="showArtist(7)">Class 8: Van Halen</a></li>
-            <li><a href="#" onclick="showArtist(8)">Class 9: Grateful Dead</a></li>
-            <li><a href="#" onclick="showArtist(9)">Class 10: The Allman Brothers</a></li>
+            <li><a href="#" onclick="showArtist(0)" class="navlink">Class 1: The Beatles</a></li>
+            <li><a href="#" onclick="showArtist(1)" class="navlink">Class 2: Jimi Hendrix</a></li>
+            <li><a href="#" onclick="showArtist(2)" class="navlink">Class 3: Led Zeppelin</a></li>
+            <li><a href="#" onclick="showArtist(3)" class="navlink">Class 4: Pink Floyd</a></li>
+            <li><a href="#" onclick="showArtist(4)" class="navlink">Class 5: Deep Purple</a></li>
+            <li><a href="#" onclick="showArtist(5)" class="navlink">Class 6: Heart</a></li>
+            <li><a href="#" onclick="showArtist(6)" class="navlink">Class 7: The Doors</a></li>
+            <li><a href="#" onclick="showArtist(7)" class="navlink">Class 8: Van Halen</a></li>
+            <li><a href="#" onclick="showArtist(8)" class="navlink">Class 9: Grateful Dead</a></li>
+            <li><a href="#" onclick="showArtist(9)" class="navlink">Class 10: The Allman Brothers</a></li>
             <li><a href="#top">Return to Top</a></li>
         </ul>
+    </nav> -->
+    <nav class="navwrapper">
+        <div>
+            <div class="select-btn">
+                <span>Select Band/Artist</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="content">
+                <!-- <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="Search" id="search" placeholder="Search">
+                </div> -->
+                <ul class="options">
+                    <li><a href="#" onclick="showArtist(9)" class="navlink">Allman Brothers, The</a></li>
+                    <li><a href="#" onclick="showArtist(0)" class="navlink">Beatles, The</a></li>
+                    <li><a href="#" onclick="showArtist(4)" class="navlink">Deep Purple</a></li>
+                    <li><a href="#" onclick="showArtist(6)" class="navlink">Doors, The</a></li>
+                    <li><a href="#" onclick="showArtist(8)" class="navlink">Grateful Dead</a></li>
+                    <li><a href="#" onclick="showArtist(5)" class="navlink">Heart</a></li>
+                    <li><a href="#" onclick="showArtist(1)" class="navlink">Jimi Hendrix</a></li>
+                    <li><a href="#" onclick="showArtist(2)" class="navlink">Led Zeppelin</a></li>
+                    <li><a href="#" onclick="showArtist(3)" class="navlink">Pink Floyd</a></li>
+                    <li><a href="#" onclick="showArtist(7)" class="navlink">Van Halen</a></li>
+                </ul>
+            </div>
+       </div>
     </nav>
     <main>
         <section>
@@ -54,7 +81,7 @@
                     <div class="notes"></div>
                     <div class="albumstocheckout">Albums to Check Out
                         <div class="albumsummary">
-                            <div class="albumname">Abby Road (1969)</div>
+                            <div class="albumname">Abbey Road (1969)</div>
                             <div class="albumcover"><img src="images/the-beatles-abbey-road.jpg" alt=""></div>
                         </div>
                         <div class="albumsummary">

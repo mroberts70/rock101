@@ -1,3 +1,12 @@
+const navWrapper = document.querySelector(".navwrapper");
+let selectBtn = navWrapper.querySelector(".select-btn");
+let theOptions = document.getElementsByClassName("navlink");
+console.log(theOptions);
+
+selectBtn.addEventListener("click", function () {
+    navWrapper.classList.toggle("active");
+});
+
 function showArtist(selectedArtist) {
     let selArtist = selectedArtist;
     let artists = document.getElementsByClassName("artist");
@@ -12,6 +21,8 @@ function showArtist(selectedArtist) {
         selArtist = artists.length;
     }
     artists[selArtist].style.display = "block";
+    navWrapper.className = navWrapper.className.replace(" active", "");
+
 }
 
 function currentYear() {
