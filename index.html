@@ -41,15 +41,15 @@
                 <i class="fa-solid fa-angle-down"></i>
             </div>
             <div class="content">
-                <!-- <div class="search">
+                <div class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" name="Search" id="search" placeholder="Search">
-                </div> -->
-                <ul class="options">
-                    <li><a href="#" onclick="showArtist(9)" class="navlink">Allman Brothers, The</a></li>
-                    <li><a href="#" onclick="showArtist(0)" class="navlink">Beatles, The</a></li>
+                    <input type="text" name="Search" id="searchbox" placeholder="Search" onkeyup="filterList()">
+                </div>
+                <ul class="options" id="artist-options">
+                    <li><a href="#" onclick="showArtist(9)" class="navlink">The Allman Brothers</a></li>
+                    <li><a href="#" onclick="showArtist(0)" class="navlink">The Beatles</a></li>
                     <li><a href="#" onclick="showArtist(4)" class="navlink">Deep Purple</a></li>
-                    <li><a href="#" onclick="showArtist(6)" class="navlink">Doors, The</a></li>
+                    <li><a href="#" onclick="showArtist(6)" class="navlink">The Doors</a></li>
                     <li><a href="#" onclick="showArtist(8)" class="navlink">Grateful Dead</a></li>
                     <li><a href="#" onclick="showArtist(5)" class="navlink">Heart</a></li>
                     <li><a href="#" onclick="showArtist(1)" class="navlink">Jimi Hendrix</a></li>
@@ -277,18 +277,18 @@
             <article class="artist" id="class8">
                 <div class="videowrapper">
                     <div class="artistname">Van Halen</div>
-                    <div class="song">Hear About It Later; So This Is Love; Unchained</div>
-                    <div class="location">6/12/1981 - Oakland Coliseum Stadium (Fair Warning Tour)</div>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/wUCz_m5gFH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <div class="notes"></div>
-                </div>
-                <div class="videowrapper">
                     <div class="song">Guitar Solo</div>
                     <div class="location">Live Without A Net - 1986</div>
                     <div class="video">
                         <iframe src="https://www.youtube.com/embed/t0csFIcTqXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="notes"></div>
+                </div>
+                <div class="videowrapper">
+                    <div class="song">Hear About It Later; So This Is Love; Unchained</div>
+                    <div class="location">6/12/1981 - Oakland Coliseum Stadium (Fair Warning Tour)</div>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/wUCz_m5gFH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="notes"></div>
                     <div class="albumstocheckout">Albums to Check Out

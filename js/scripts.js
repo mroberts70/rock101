@@ -1,11 +1,28 @@
 const navWrapper = document.querySelector(".navwrapper");
 let selectBtn = navWrapper.querySelector(".select-btn");
-let theOptions = document.getElementsByClassName("navlink");
-console.log(theOptions);
+const theArtists = document.getElementsByClassName("navlink");
+
+// let theOptions = document.getElementsByClassName("navlink");
+// console.log(theOptions);
 
 selectBtn.addEventListener("click", function () {
     navWrapper.classList.toggle("active");
 });
+
+function filterList() {
+    let strSearch = document.getElementById("searchbox");
+    strSearch = strSearch.value.toUpperCase();
+
+    for(i = 0; i < theArtists.length; i++) {
+        txtValue = theArtists[i].textContent;
+        if(txtValue.toUpperCase().indexOf(strSearch) > -1) {
+            theArtists[i].style.display = "";
+        }
+        else {
+            theArtists[i].style.display = "none";
+        }
+    }
+}
 
 function showArtist(selectedArtist) {
     let selArtist = selectedArtist;
@@ -22,6 +39,11 @@ function showArtist(selectedArtist) {
     }
     artists[selArtist].style.display = "block";
     navWrapper.className = navWrapper.className.replace(" active", "");
+    document.getElementById("searchbox").value = "";
+    for(n = 0; n < theArtists.length; n++) {
+        theArtists[n].style.display = "";
+    }
+    
 
 }
 
