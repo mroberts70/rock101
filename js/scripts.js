@@ -43,6 +43,9 @@ function showArtist(selectedArtist) {
     for(n = 0; n < theArtists.length; n++) {
         theArtists[n].style.display = "";
     }
+    let theDropDown = document.getElementById("artist-options");
+    theDropDown.documentElement.scrollTop = 0;
+    theDropDown.body.scrollTop = 0;
     
 
 }

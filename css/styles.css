@@ -35,7 +35,7 @@ a:link, a:visited {
     color: whitesmoke;
 }
 a:hover, a:active {
-    color: greenyellow;
+    color: salmon;
 }
 
 
@@ -317,6 +317,7 @@ article {
     bottom: 100px;
     z-index: 99; /* Make sure it does not overlap */
     border: 1px ridge black;
+    background-color: white;
     outline: none; /* Remove outline */
     font-weight: bold;
     cursor: pointer; /* Add a mouse pointer on hover */
