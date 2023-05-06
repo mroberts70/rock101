@@ -3,14 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    min-height: 100vh;
+}
 html {
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(0, 0, 0, 0.95);
+    background-image: url("../images/wallpaper-rock-n-roll-i-love-rock-and-roll.jpg");
+    background-size: cover;
+    background-position:bottom;
+    background-attachment: fixed;
+    background-blend-mode:multiply;
 }
 body {
+    background-color: rgba(127, 127, 127, 0.3);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 100%;
+    font-size: 110%;
     line-height: 1.3;
-    color: whitesmoke;
+    color: salmon;
     font-variant: small-caps;
     position: relative;
     display: grid;
@@ -120,6 +129,7 @@ header h3 {
     background-color: black;
     justify-content: space-between;
     color: whitesmoke;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .select-btn i {
     font-size: 150%;
@@ -135,6 +145,7 @@ header h3 {
     padding: 2vh;
     border-radius: 7px;
     background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .navwrapper.active .content {
     display: block;
@@ -237,8 +248,9 @@ article {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 3px ridge rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
 }
-
 
 /********************************************************************
 *********************************************************************
@@ -255,12 +267,15 @@ article {
 .albumsummary {
     margin-top: 4vh;
 }
-.albumcover img {
+.albumcover img, .artist-image img {
     max-width: 600px;
     width: 100%;
-    margin: 2vh;
+    margin: 5vh 0 0;
     border: 3px ridge rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border-radius: 7px;
+}
+.artist-image p {
+    max-width: 600px;
 }
 .artistname {
     font-size: 500%;
@@ -270,16 +285,55 @@ article {
 .song {
     font-size: 150%;
 }
-.albumstocheckout .albumsummary .notes {
-    font-size: 50%;
+.notes {
     max-width: 600px;
-    text-align: left;
     width: 100%;
+    text-align: left;
     margin: 0 auto;
+    padding-bottom: 15px;
+    border-bottom: 3px ridge rgba(0, 0, 0, 0.274);
 }
-.albumstocheckout .albumsummary .notes p {
-    padding: 10px 0;
+.notes ul {
+    list-style-type: none;
 }
+.notes li {
+    margin-left: 30px;
+}
+.notes p {
+    font-size: 50%;
+}
+
+/********************************************************************
+*********************************************************************
+
+                    Return-To-Top Button
+
+*********************************************************************
+********************************************************************/
+#totopbutton {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 25vw;
+    bottom: 100px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: 1px ridge black;
+    outline: none; /* Remove outline */
+    font-weight: bold;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: .5em;
+    /* margin: 0 1em 3px 0; */
+    font-size: 150%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.25);
+    color: rgba(255, 255, 255, 0.25);
+    transition: all 300ms ease-in;
+ }
+ 
+ #totopbutton:hover {
+    background-color: rgba(0,0,0,1);
+    color: red;
+    border: 1px ridge red;
+ }
 
 /********************************************************************
 *********************************************************************
