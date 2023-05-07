@@ -59,6 +59,10 @@ header img {
     margin: 2vh;
     transform: rotate(-20deg);
     border-radius: 50%;
+    transition: transform 300ms ease-in;
+}
+header img:hover {
+    transform: rotate(340deg);
 }
 header h2 {
     font-size: 300%;
