@@ -288,8 +288,15 @@ article {
 }
 .artistname {
     font-size: 500%;
-    color: salmon;
+    color: white;
     font-weight: bold;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    padding: 2vh;
+    margin-bottom: 15px;
+    border-radius: 7px;
 }
 .song {
     font-size: 150%;
@@ -310,6 +317,7 @@ article {
 }
 .notes p {
     font-size: 50%;
+    font-variant: normal;
 }
 
 /********************************************************************
@@ -325,7 +333,7 @@ article {
     left: 100px;
     bottom: 100px;
     z-index: 99; /* Make sure it does not overlap */
-    border: rgba(250, 128, 114, 0.25);
+    border: 1px ridge rgba(250, 128, 114, 0.25);
     outline: none; /* Remove outline */
     font-weight: bold;
     cursor: pointer; /* Add a mouse pointer on hover */
@@ -333,13 +341,15 @@ article {
     font-size: 150%;
     border-radius: 7px;
     background-color: rgba(250, 128, 114, 0.1);
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(0, 0, 0, 0.3);
     transition: all 300ms ease-in;
  }
  
  #totopbutton:hover {
-    background-color: rgba(0, 0, 0, 1);
-    color: rgba(250, 128, 114, 1);
+    /* background-color: rgba(0, 0, 0, 1);
+    color: rgba(250, 128, 114, 1); */
+    background-color: rgba(250, 128, 114, 1);
+    color: rgba(0, 0, 0, 1);
     border: 1px ridge rgba(250, 128, 114, 1);
  }
 
