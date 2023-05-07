@@ -57,6 +57,8 @@ header {
 header img {
     max-width: 300px;
     margin: 2vh;
+    transform: rotate(-20deg);
+    border-radius: 50%;
 }
 header h2 {
     font-size: 300%;
@@ -112,7 +114,7 @@ header h3 {
 }
 .navwrapper div {
     position: sticky;
-    top: 300px;
+    top: 350px;
     width: 100%;
 }
 .select-btn, .options li {
@@ -129,24 +131,31 @@ header h3 {
     background-color: black;
     justify-content: space-between;
     color: whitesmoke;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px ridge rgba(255, 255, 255, 0.2);
+    transition: border 300ms ease-in;
+}
+.select-btn:hover {
+    border: 1px ridge rgba(255, 255, 255, .6);
 }
 .select-btn i {
     font-size: 150%;
     color: salmon;
     transition: transform 300ms linear;
 }
+/* If the .navwrapper also has class active and the search/dropdown is open, then rotate the arrow-icon */
 .navwrapper.active .select-btn i {
     transform: rotate(-180deg);
 }
 .content {
     display: none;
-    margin-top: 1vh;
+    margin-top: 10px;
     padding: 2vh;
     border-radius: 7px;
     background-color: black;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* If the .navwrapper also has class active, then show the search/dropdown */
 .navwrapper.active .content {
     display: block;
 }
@@ -248,7 +257,7 @@ article {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 3px ridge rgba(0, 0, 0, 0.5);
+    /* border: 3px ridge rgba(0, 0, 0, 0.5); */
     border-radius: 7px;
 }
 
@@ -313,27 +322,25 @@ article {
 #totopbutton {
     display: none; /* Hidden by default */
     position: fixed;
-    left: 25vw;
+    left: 100px;
     bottom: 100px;
     z-index: 99; /* Make sure it does not overlap */
-    border: 1px ridge black;
-    background-color: white;
+    border: rgba(250, 128, 114, 0.25);
     outline: none; /* Remove outline */
     font-weight: bold;
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: .5em;
-    /* margin: 0 1em 3px 0; */
     font-size: 150%;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,.25);
+    border-radius: 7px;
+    background-color: rgba(250, 128, 114, 0.1);
     color: rgba(255, 255, 255, 0.25);
     transition: all 300ms ease-in;
  }
  
  #totopbutton:hover {
-    background-color: rgba(0,0,0,1);
-    color: red;
-    border: 1px ridge red;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(250, 128, 114, 1);
+    border: 1px ridge rgba(250, 128, 114, 1);
  }
 
 /********************************************************************
