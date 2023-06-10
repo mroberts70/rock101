@@ -1,4 +1,3 @@
 # rock101
- Rock bands/artists introducted during class
- 
-05/11/2023 - This needs more artists.
+# Featuring JavaScript that will filter the contents of a drop-down based on the string in the Search box
+
